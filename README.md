@@ -10,7 +10,7 @@ Navigate to your folder and run the docker-compose.yml file first to spin up the
 Docker compose up 
 
 If no Docker installed specify the local MySQL database credentials in the src/db/index.js file.
-Once MySQL is up and running, pull the code into your local directory 
+Once MySQL is up and running continue step 2
 
 # Step2
 Navigate to the folder and run the following command in the terminal 
