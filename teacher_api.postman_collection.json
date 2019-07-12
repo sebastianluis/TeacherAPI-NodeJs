@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "86fac03c-d9a3-4d2b-8d5e-575f845840c8",
+		"name": "GovT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"teacher\": \"teacherken@gmail.com\",\n  \"students\":\n    [\n      \"studentjon@gmail.com\",\n      \"studenthon@gmail.com\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/commonstudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/commonstudents?teacher=teacherken@gmail.com&teacher=teacherjoe@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"commonstudents"
+					],
+					"query": [
+						{
+							"key": "teacher",
+							"value": "teacherken@gmail.com"
+						},
+						{
+							"key": "teacher",
+							"value": "teacherjoe@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/retrievefornotifications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"teacher\":  \"teacherjoe@gmail.com\",\n  \"notification\": \"Hello students! @studentagnes@gmail.com @commonstudent1@gmail.com @studentjon@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/retrievefornotifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"retrievefornotifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/suspend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"student\" : \"badstudent1@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/suspend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"suspend"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
