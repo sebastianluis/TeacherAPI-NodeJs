@@ -2,9 +2,14 @@
 
 Instructions
 
-Run the docker-compose.yml file first to spin up the mysql instance if you have docker installed in you machine.
+# Step 1
+
+Run the docker-compose.yml file first to spin up the mysql instance if you have docker installed in your machine.
 Otherwise specify the local my sql database credentials in the src/db/index.js file.
 Once MySQL is up and running, pull the code into your local directory 
+
+# Step2
+Navigate to the folder and run the following command in the terminal 
 
 npm install 
 
@@ -12,12 +17,17 @@ This will install all the dependacies.
 
 To Run the sever run the following command
 
+# Step3
+Run the following command to run the server
+
 npm start
 
 Now your server will be running in http://localhost:4001 
 
-You can now test the api's using postman or similar tools
+# Step 4
 
-to run unit test run the following command
+You can now test the api's using postman or similar tools.
+
+To run unit test run the following command
 
 npm run test
