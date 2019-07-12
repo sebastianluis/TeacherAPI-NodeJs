@@ -19,7 +19,6 @@ npm install
 
 This will install all the dependacies. 
 
-To Run the sever run the following command
 
 # Step3
 Run the following command to run the server
