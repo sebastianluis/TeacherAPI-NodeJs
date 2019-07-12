@@ -9,7 +9,7 @@ Navigate to your folder and run the docker-compose.yml file first to spin up the
 
 docker-compose up 
 
-If no Docker installed specify the local MySQL database credentials in the src/db/index.js file.
+If you have MySQL installed locally in your system then specify the local MySQL database credentials in the src/db/index.js file.
 Once MySQL is up and running continue step 2
 
 # Step2
