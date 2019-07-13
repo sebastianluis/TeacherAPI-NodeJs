@@ -38,4 +38,7 @@ To run unit test run the following command
 
 npm run test
 
-please install mocha globally using npm install -g mocha if mocha command fails!
+If mocha command fails, please install mocha globally using the following command
+
+npm install -g mocha 
+
