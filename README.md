@@ -32,6 +32,7 @@ Now your server will be running in http://localhost:4001
 # Step 4
 
 You can now test the api's using postman or similar tools.
+Postman collections are also included.
 
 To run unit test run the following command
 
