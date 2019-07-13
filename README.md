@@ -14,7 +14,7 @@ If you have no docker installed and have MySQL installed locally in your system
 then create a new database and specify the local MySQL database credentials and database name in the src/db/index.js file.
 Once MySQL is up and running continue step 2
 
-# Step2
+# Step 2
 Navigate to the folder and run the following command in the terminal 
 
 npm install 
@@ -22,7 +22,7 @@ npm install
 This will install all the dependancies. 
 
 
-# Step3
+# Step 3
 Run the following command to run the server
 
 npm start
