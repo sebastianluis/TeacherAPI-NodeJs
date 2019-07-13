@@ -6,10 +6,12 @@ Instructions
 
 Pull the code into your local computer.
 Navigate to your folder and run the docker-compose.yml file first to spin up the mysql instance if you have docker installed in your machine.
+Run the following command 
 
 docker-compose up 
 
-If you have MySQL installed locally in your system then specify the local MySQL database credentials in the src/db/index.js file.
+If you have no docker installed and have MySQL installed locally in your system 
+then create a new database and specify the local MySQL database credentials and database name in the src/db/index.js file.
 Once MySQL is up and running continue step 2
 
 # Step2
@@ -17,7 +19,7 @@ Navigate to the folder and run the following command in the terminal
 
 npm install 
 
-This will install all the dependacies. 
+This will install all the dependancies. 
 
 
 # Step3
