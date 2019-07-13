@@ -37,3 +37,5 @@ Postman collections are also included.
 To run unit test run the following command
 
 npm run test
+
+please install mocha globally using npm install -g mocha if mocha command fails!
