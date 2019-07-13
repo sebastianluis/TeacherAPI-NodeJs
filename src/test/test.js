@@ -1,7 +1,7 @@
 var supertest = require("supertest");
 var should = require("should");
 var server = supertest.agent("http://localhost:4001");
-describe("SAMPLE unit test",function(){
+describe("Teacher API unit test",function(){
 
   // #1 should return home 
   it("/GET HOME",function(done){
