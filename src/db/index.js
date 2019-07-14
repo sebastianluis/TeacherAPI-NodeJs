@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+const util = require('util');
 var db_config = {
     host     : 'localhost',
     user     : 'user',
@@ -25,19 +26,20 @@ pool.getConnection(function(err, connection) {
     return
 });
 
-pool.initializeDB = function(){
+pool.query = util.promisify(pool.query);
+
+pool.initializeDB = async function() {
     let createTeacherStudentTable = `create table if not exists teacher_student_map(
         id int primary key auto_increment,
         teacherId varchar(255)not null,
         studentId varchar(255)not null,
         suspended tinyint(1) not null default 0
     )`;
-
-pool.query(createTeacherStudentTable, function(err, results, fields) {
-if (err) {
-console.log(err.message);
-}
-});
+    try {
+        await pool.query(createTeacherStudentTable);
+    } catch (err) {
+        console.log(err.message);
+    }
 }
 
 pool.on('error', function(err) {

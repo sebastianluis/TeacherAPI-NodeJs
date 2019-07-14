@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Database connection
-app.use(function(req, res, next) {
-db.initializeDB(); // initialize with creating table if not existis
+app.use(async function(req, res, next) {
+await db.initializeDB(); // initialize with creating table if not existis
 next();
 });
 
