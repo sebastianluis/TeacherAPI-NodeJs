@@ -1,6 +1,9 @@
 # TeacherAPI-NodeJs
 
-Instructions
+Instructions.
+# Prerequisites
+1. Node version 8 or above 
+2. Docker and Docker Compose ( If Mysql instance to be running in docker)
 
 # Step 1
 
