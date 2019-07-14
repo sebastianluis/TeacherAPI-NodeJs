@@ -57,8 +57,9 @@ router.get('/commonstudents', function(req, res, next) {
 			const condition = `"${teacher}"`;
 			conditionArr.push(condition);
 		});
+	const teacherCount = conditionArr.length;
 	query =`SELECT studentId, COUNT(studentId) FROM teacher_student_map where 
-	teacherId IN (${conditionArr.join()}) GROUP BY studentId HAVING COUNT(studentId) > 1;`
+	teacherId IN (${conditionArr.join()}) GROUP BY studentId HAVING COUNT(studentId) >= ${teacherCount}`;
 	}
 	else {
 		query = `SELECT distinct studentId FROM teacher_student_map WHERE teacherId="${teachers}"`;
