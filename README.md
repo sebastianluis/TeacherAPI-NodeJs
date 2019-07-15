@@ -16,6 +16,7 @@ docker-compose up
 
 If you have no docker installed and have MySQL installed locally in your system 
 then create a new database and specify the local MySQL database credentials and database name in the src/db/index.js file.
+
 Once MySQL is up and running continue step 2
 
 # Step 2
